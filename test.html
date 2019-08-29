@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    .rotate-print-ninety{
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);-webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); -o-transform: rotate(270deg);transform: rotate(270deg);
+    }
+    .table-demo{
+      border: 1px solid red;
+    }
+    .table-demo td{
+      padding: 10px;
+    }
+    .divname{
+      width: 50px;
+      height: 100px;
+      border: 1px solid red;
+      margin-bottom: 30px;
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);-webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); -o-transform: rotate(270deg);transform: rotate(270deg);
+    }
+  </style>
+</head>
+<body>
+<div style="position:absolute;filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);-webkit-transform: rotate(270deg); -moz-transform: rotate(270deg); -o-transform: rotate(270deg);transform: rotate(270deg);">内容啊</div>
+<div class="rotate-print-ninety divname">
+  123
+</div>
+<table class="table-demo rotate-print-ninety">
+  <tr >
+    <td >1</td>
+    <td >2</td>
+    <td >3</td>
+  </tr>
+  <tr >
+    <td >1</td>
+    <td >2</td>
+    <td >3</td>
+  </tr>
+  <tr >
+    <td >1</td>
+    <td >2</td>
+    <td >3</td>
+  </tr>
+</table>
+</body>
+</html>
