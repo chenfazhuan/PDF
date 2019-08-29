@@ -85,7 +85,7 @@ let webpackConfig = {
     inline: true,
     hot: true,
     host: 'localhost',
-    port: 8088,
+    port: 8089,
     watchContentBase: true,
     proxy: {
       '/api': 'https://www.easy-mock.com/mock/5b7e1da647bd8a6c422b9bd4',

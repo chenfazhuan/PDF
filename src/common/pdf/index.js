@@ -33,7 +33,10 @@ async function showPdf(base64, callback) {
     await page.render(renderContext);
     canvas.className = 'canvas'; // 给canvas节点定义一个class名,这里我取名为canvas
     image.setAttribute('src', canvas.toDataURL());
-    image.setAttribute('style', 'height:978px;width:650px;margin-bottom: 10px');
+    image.setAttribute(
+      'style',
+      'height:978px;width:650px;margin-bottom: 10px;display: block;margin: 0 auto;',
+    );
     fragment.appendChild(image); // 添加canvas节点到fragment文档片段中
   }
   callback(fragment);
